@@ -1,19 +1,3 @@
-# Terraform code repository
+# My Terraform Cloud Account
 
-Short description
-
-## What this does
-
-Lorem ipsum
-
-## Variables
-
-Lorem ipsum
-
-## Code example
-
-```hcl
-terraform {
-  ...
-}
-```
+Manages most things in my personal [Terraform Cloud](https://www.terraform.io/docs/cloud/index.html) account with Terraform Cloud using this repository. Inception!
