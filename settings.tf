@@ -9,4 +9,5 @@ terraform {
   }
 }
 
+# Use TFE_TOKEN env variable in TF Cloud to configure provider
 provider "tfe" {}
