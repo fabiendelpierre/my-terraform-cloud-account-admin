@@ -10,7 +10,7 @@ resource "tfe_workspace" "azure_msdn_subscription" {
   }
 
   allow_destroy_plan  = true
-  auto_apply          = false
+  auto_apply          = true
 }
 
 resource "tfe_variable" "azure_msdn_subscription_azure_tenant_id" {
