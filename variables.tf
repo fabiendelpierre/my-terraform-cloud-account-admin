@@ -1,3 +1,11 @@
+variable "tfe_org_token" {
+  type = string
+}
+
+variable "tfe_team_token" {
+  type = string
+}
+
 variable "my_github_organization" {
   type = string
 }

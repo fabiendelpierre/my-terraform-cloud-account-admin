@@ -9,5 +9,11 @@ terraform {
   }
 }
 
-# Use TFE_TOKEN env variable in TF Cloud to configure provider
-provider "tfe" {}
+provider "tfe" {
+  token = var.tfe_org_token
+}
+
+provider "tfe" {
+  alias = "module_registry"
+  token = var.tfe_team_token
+}

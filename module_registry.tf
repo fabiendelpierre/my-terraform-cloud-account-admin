@@ -1,4 +1,5 @@
 resource "tfe_registry_module" "virtual_network" {
+  provider = tfe.module_registry
   vcs_repo {
     display_identifier = data.terraform_remote_state.github_repositories.outputs.module_azurerm_virtualnetwork_repo.full_name
     # display_identifier = "fabiendelpierre/terraform-azurerm-virtualnetwork"
