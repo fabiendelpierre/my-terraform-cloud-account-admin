@@ -37,3 +37,11 @@ variable "azure_client_id" {
 variable "azure_client_secret" {
   type = string
 }
+
+variable "azure_ad_client_id" {
+  type = string
+}
+
+variable "azure_ad_client_secret" {
+  type = string
+}
