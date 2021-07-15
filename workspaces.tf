@@ -85,7 +85,7 @@ resource "tfe_variable" "azure_msdn_azure_ad_client_secret" {
   category     = "env"
   workspace_id = tfe_workspace.azure_msdn_sandbox_ad.id
   description  = "Client secret tied to above Azure app reg"
-  sensitive    = true
+  # sensitive    = true
 }
 
 ##########
