@@ -79,14 +79,14 @@ resource "tfe_variable" "azure_msdn_azure_ad_client_id" {
   description  = "Azure AD app reg client ID used to manage Azure AD tenant"
 }
 
-# resource "tfe_variable" "azure_msdn_azure_ad_client_secret" {
-#   key          = "ARM_CLIENT_SECRET"
-#   value        = var.azure_ad_client_secret
-#   category     = "env"
-#   workspace_id = tfe_workspace.azure_msdn_sandbox_ad.id
-#   description  = "Client secret tied to above Azure app reg"
-#   # sensitive    = true
-# }
+resource "tfe_variable" "azure_msdn_azure_ad_client_secret" {
+  key          = "ARM_CLIENT_SECRET"
+  value        = var.azure_ad_client_secret
+  category     = "env"
+  workspace_id = tfe_workspace.azure_msdn_sandbox_ad.id
+  description  = "Client secret tied to above Azure app reg"
+  # sensitive    = true
+}
 
 ##########
 
